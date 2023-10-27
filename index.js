@@ -28,7 +28,7 @@ const questions = [
         name: "License",
         message: "What is your license?",
         type: "list",
-        choice: [
+        choices: [
             "MIT License",
             "Apache License 2.0",
             "GNU General Public License v3.0",
@@ -59,14 +59,17 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.appendFile(fileName, data,  (err) =>
-    err ? console.error(err) : console.log("Commit logged!")
-  );
+    fs.appendFile(fileName, data, (err) =>
+    err ? console.error(err) : console.log("Commit logged!"));
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    
+   inquirer.prompt(questions).then(data => {
+    console.log(data.toString());
+
+    writeToFile("README.md", data.toString());
+    })
 }
 
 // Function call to initialize app
