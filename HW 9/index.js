@@ -36,6 +36,16 @@ const questions = [
         ]
     },
     {
+        name: "Contributions",
+        message: "What is your contributions",
+        type: "input"
+    },
+    {
+        name: "Tests",
+        message: "What is your test",
+        type: "input"
+    },
+    {
         name: "username",
         message: "What is your username?",
         type: "input"
@@ -44,18 +54,20 @@ const questions = [
         name: "email",
         message: "What is your email?",
         type: "input"
-    },
-    {
-
     }
-
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.appendFile(fileName, data,  (err) =>
+    err ? console.error(err) : console.log("Commit logged!")
+  );
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    
+}
 
 // Function call to initialize app
 init();
