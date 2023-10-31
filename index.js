@@ -1,11 +1,14 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
+// Below: reference this code. 
+const {unlink} = require('node:fs');
 
 // TODO: Create an array of questions for user input
 const questions = [
     {
-        name: "project title",
+        name: "title",
         message: "What is your project title?",
         type: "input"
     },
@@ -58,17 +61,21 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.appendFile(fileName, data, (err) =>
-    err ? console.error(err) : console.log("Commit logged!"));
+// Below: reference the code. 
+function writeToFile(fileName, response) {
+    fs.appendFile(fileName, response, (error) =>
+    error ? console.error(error) : console.log("File written successfully"));
 }
 
 // TODO: Create a function to initialize app
+// Below: reference the code. 
 function init() {
-   inquirer.prompt(questions).then(data => {
-    console.log(data.toString());
-
-    writeToFile("README.md", data.toString());
+   inquirer.prompt(questions).then(response => {
+    console.log(response);
+    unlink("./examples/README.md", (error) => {
+        error ? console.error(error) : console.log("The file been erased successfully");
+      })
+    writeToFile("./examples/README.md", generateMarkdown(response));
     })
 }
 
