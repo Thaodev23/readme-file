@@ -1,8 +1,7 @@
-# r
+# README.file
   ![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   
   ## Table of Content
- 
   - [Description](#Description)
   - [Installation](#Installation)
   - [Usage](#Usage)
@@ -10,30 +9,30 @@
   - [Contributions](#Contributions)
   - [Tests](#Tests)
   - [Questions](#Questions)
-  
+
   ## Description
-  r
+  Generating a readme file
  
   ## Installation
-  r
+  Node index.js
   
   ## Usage
-  r
+  Generating useful README.file
   
   ## License 
   MIT License   
   https://opensource.org/licenses/MIT
   
   ## Contributions
-  r
+  Help generate useful README.file
   
   ## Tests
-  r
+  Node index.js
 
   ## Questions
-  https://github.com/r
+  https://github.com/joeythao123
 
   How to reach me:
-  r
+  joeythao123@gmail.com
   
   

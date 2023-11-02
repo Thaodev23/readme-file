@@ -59,7 +59,8 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-// Below: reference the code. 
+// Below: reference the code.
+// Below:  
 function writeToFile(fileName, response) {
     fs.writeFile(fileName, response, (error) =>
     error ? console.error(error) : console.log("File written successfully"));
