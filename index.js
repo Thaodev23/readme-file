@@ -2,8 +2,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
-// Below: reference this code. 
-const {unlink} = require('node:fs');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -63,7 +61,7 @@ const questions = [
 // TODO: Create a function to write README file
 // Below: reference the code. 
 function writeToFile(fileName, response) {
-    fs.appendFile(fileName, response, (error) =>
+    fs.writeFile(fileName, response, (error) =>
     error ? console.error(error) : console.log("File written successfully"));
 }
 
@@ -72,9 +70,6 @@ function writeToFile(fileName, response) {
 function init() {
    inquirer.prompt(questions).then(response => {
     console.log(response);
-    unlink("./examples/README.md", (error) => {
-        error ? console.error(error) : console.log("The file been erased successfully");
-      })
     writeToFile("./examples/README.md", generateMarkdown(response));
     })
 }
