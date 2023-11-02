@@ -1,4 +1,11 @@
 # README.file
+```
+Github repository below: 
+https://github.com/Thaodev23/readme-file 
+
+Screencastify video below: 
+https://drive.google.com/file/d/1zyJd2qj2mX83nDjV1Zo0Xox67qf-eFza/view 
+```
 
 ## User Story 
 ```
@@ -39,5 +46,19 @@ THEN the README file will be navigated to the corresponding section
 
 Below: Image of an example of the generated README.file. 
 ![README.file](./assets/pic1.png)
+
+## Collaborators
+
+```
+Jason Yang:
+Github profile - https://github.com/Jasony95
+Classmate that collaborated on the homework assignment together.
+ ```
+
+```
+Sichoun Nplhaib Lee:
+Github profile - https://github.com/DDXP3.
+Classmate that collaborated on the homework assignment together.
+```
 
 

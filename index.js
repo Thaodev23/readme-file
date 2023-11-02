@@ -1,3 +1,8 @@
+// Author: Joey Thao
+// Collaborators: Jason Yang, Sichoun Lee
+// Date: 11/02/2023
+// Description: generating a README.file through node.js. 
+
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");

@@ -1,4 +1,4 @@
-# README.file
+# ReadME.file
   ![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   
   ## Table of Content
@@ -11,20 +11,20 @@
   - [Questions](#Questions)
 
   ## Description
-  Generating a readme file
+  Generating README.file
  
   ## Installation
   Node index.js
   
   ## Usage
-  Generating useful README.file
+  README.file
   
   ## License 
   MIT License   
   https://opensource.org/licenses/MIT
   
   ## Contributions
-  Help generate useful README.file
+  Help generate README.file
   
   ## Tests
   Node index.js
