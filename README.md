@@ -60,5 +60,12 @@ Sichoun Nplhaib Lee:
 Github profile - https://github.com/DDXP3.
 Classmate that collaborated on the homework assignment together.
 ```
+## References
 
+```
+https://stackoverflow.com/questions/62597209/trying-to-generate-a-readme-using-nodejs
 
+https://stackoverflow.com/questions/67013842/trying-to-place-license-badge-within-readme-md-using-node-js-but-getting-error-a
+
+https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+```
