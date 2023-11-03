@@ -64,15 +64,13 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-// Below: reference the code.
-// Below:  
 function writeToFile(fileName, response) {
     fs.writeFile(fileName, response, (error) =>
     error ? console.error(error) : console.log("File written successfully"));
 }
 
 // TODO: Create a function to initialize app
-// Below: reference the code. 
+// Below: the code below was reference from stackoverflow.com
 function init() {
    inquirer.prompt(questions).then(response => {
     console.log(response);
